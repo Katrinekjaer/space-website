@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Space.dk</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/dd7e51d33f.js" crossorigin="anonymous"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const button = document.querySelector(".burger-menu-icon");
+        const menu = document.querySelector("nav .menu");
+
+        button.addEventListener("click", () => {
+          const isOpen = menu.classList.toggle("is-open");
+          button.setAttribute("aria-expanded", isOpen);
+        });
+      });
+    </script>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <!--Burgermenu-->
+    <nav>
+        <div class="menu">
+       <a href="space.html">SPACE</a>
+       <a href="breathe.html" aria-current="page">BREATHE</a>
+       <a href="make-contact.html">MAKE CONTACT</a>
+       </div>
+
+       <button class="burger-menu-icon" type="button" aria-label="Toggle menu" aria-expanded="false">
+         <i class="fa-solid fa-bars" aria-hidden="true"></i>
+       </button>
+    </nav>
+
+    <!--Logo på forsiden-->
+    <div class="logo-forside">
+        <h1>SPACE</h1>
+    </div>
+
+    <!--Log in-->
+    <div class="log-in">
+        <a href="#">LOG IN</a>
+        <img class="astronaut" src="img/user-astronaut-solid.png" alt="astronaut">
+    </div>
+    
+</header>
+
+
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Space.dk</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/dd7e51d33f.js" crossorigin="anonymous"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const button = document.querySelector(".burger-menu-icon");
+        const menu = document.querySelector("nav .menu");
+
+        button.addEventListener("click", () => {
+          const isOpen = menu.classList.toggle("is-open");
+          button.setAttribute("aria-expanded", isOpen);
+        });
+      });
+    </script>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <!--Burgermenu-->
+    <nav>
+        <div class="menu">
+       <a href="space.html" aria-current="page">SPACE</a>
+       <a href="breathe.html">BREATHE</a>
+       <a href="make-contact.html">MAKE CONTACT</a>
+       </div>
+
+       <button class="burger-menu-icon" type="button" aria-label="Toggle menu" aria-expanded="false">
+         <i class="fa-solid fa-bars" aria-hidden="true"></i>
+       </button>
+    </nav>
+
+    <!--Logo på forsiden-->
+    <div class="logo-forside">
+        <h2 class="hvid-h2">FIND YOUR</h2>
+        <h1>SPACE</h1>
+    </div>
+
+    <!--Log in-->
+    <div class="log-in">
+        <a href="#">LOG IN</a>
+        <img class="astronaut" src="img/user-astronaut-solid.png" alt="astronaut">
+    </div>
+    
+</header>
+
+<main>
+    <!--Intro med tekst og ikoner-->
+    <section class="intro-icons">
+       <article class="breathe">
+        <img class="breathe-symbol" src="img/breathe-symbol.png" alt="breathe symbol">
+        <h2 class="cyan-h2">BREATHE</h2>
+        <p>Åndedrætsøvelser, der hjælper dig med at finde ro og balance.</p>
+        </article>
+
+        <article class="meditation">
+        <img class="meditation-symbol" src="img/meditation-symbol.png" alt="meditation symbol">
+        <h2 class="cyan-h2">MEDITATION</h2>
+        <p>Guidede øvelser til forskellige situationer i hverdagen.</p>
+        </article>
+
+        <article class="mindful">
+        <img class="mindful-symbol" src="img/mindful-symbol.png" alt="mindful symbol">
+        <h2 class="cyan-h2">MINDFUL</h2>
+        <p>Små pause til at finde ro, mærke efter og være til stede.</p>
+        </article>
+    </section>
+
+<!--Slogan og univers-billede-->
+    <section class="planet-slogan">
+        <img class="univers-img" src="img/baggrund.jpg" alt="universet">
+        <img class="planet-1" src="img/planet-1.png" alt="planet 1">
+        <h2 class="slogan">ET SPACE TIL EN VERDEN DER ALDRIG STÅR STILLE.</h2>
+    </section>
+
+<!--Udforsk meditationer-->
+    <section class="udforsk-meditationer">
+        <img class="planet-2" src="img/planet-2.png" alt="planet 2">
+        <article>
+        <h2 class="lilla-h2">UDFORSK MEDITATIONER</h2>
+        <a href="breathe.html">></a>
+        <p>Verden kan godt føles lidt overvældende. SPACE er dit digitale pusterum, hvor du kan sænke tempoet, slippe hverdagens pres for en stund og finde ro gennem meditation, åndedrætsøvelser og mindfulness. Her er der plads til dig, præcis som du er.</p>
+        </article>
+    </section>
+</main>
+
+<!--Footer-->
+<footer>
+    <section class="footer-1">
+<h3>© 2026 SPACE, Inc · Virksomhedsoplysninger · Vilkår · Fortrolighed</h3>
+    </section>
+
+    <section class="footer-2">
+         <i class="fa-solid fa-earth-europe" style="color: #3bb8ed;" aria-hidden="true"></i>
+        <h3>Dansk (DK) </h3>
+    </section>
+</footer>
+
+</body>
+</html>
