@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Space.dk</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/dd7e51d33f.js" crossorigin="anonymous"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const button = document.querySelector(".burger-menu-icon");
+        const menu = document.querySelector("nav .menu");
+
+        button.addEventListener("click", () => {
+          const isOpen = menu.classList.toggle("is-open");
+        });
+      });
+    </script>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Audiowide&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+    <!--Burgermenu-->
+    <nav>
+        <div class="menu">
+       <a href="space.html">SPACE</a>
+       <a href="breathe.html">BREATHE</a>
+       <a href="make-contact.html" class="current-page">MAKE CONTACT</a>
+       </div>
+
+       <button class="burger-menu-icon" type="button">
+         <i class="fa-solid fa-bars"></i>
+       </button>
+    </nav>
+
+    <!--Logo på forsiden-->
+    <div class="logo-forside">
+        <h1>SPACE</h1>
+    </div>
+
+    <!--Log in-->
+    <div class="log-in">
+        <a href="#">LOG IN</a>
+        <img class="astronaut" src="img/user-astronaut-solid.png" alt="astronaut">
+    </div>
+    
+</header>
+
+<!--Kontaktformular-->
+
+<main>
+
+<div class="kontakt-layout">
+<section class="kontakt-tekst">
+    <h2 class="cyan-h2">MAKE CONTACT</h2>
+    <h2 class="cyan-h2">FÅ HJÆLP TIL SELVHJÆLP</h2>
+    <p>Lær mere om din mentale sundhed, og få konkret vejledning til at skabe ro i hverdagen. Dit velvære er vigtigt. Både for os og for dig. Skriv til os, hvis du har brug for yderligere hjælp til en mere mindful livsstil.</p>
+    <img src="img/planet-6.png" alt="planet 6">
+</section>
+
+ <form class="kontaktformular">
+        <label for="navn">Navn:</label>
+        <input id="navn" type="text" required>
+
+        <label for="mail">E-mail:</label>
+        <input id="mail" type="email">
+
+        <label for="emne">Emne:</label>
+        <input id="emne" type="text">
+
+        <label for="besked">Besked:</label>
+        <textarea name="besked" id="besked" rows="8"></textarea>
+
+        <input type="submit" name="submit" value="SEND">
+
+    </form>
+</div>
+
+
+<!--Kontaktinformationer-->
+<div class="kontakt-detaljer">
+<div class="kontakt-info">
+<h2 class="cyan-h2">ELLER FANG OS HER</h2>
+<p>E-mail: space@makecontact.dk</p>
+<p>Telefonnummer: +45 20 60 80 44</p>
+<p>Adresse: Novavej 88, 1000 København K</p>
+</div>
+
+<div class="kontakt-tider">
+<p>Mail: Alle dage: 6.00-21.00 (Svar inden for en time)</p>
+<p>Telefon: Mandag-fredag: 8.00-18.00</p>
+
+</div>
+</div>
+
+
+
+</main>
+
+<!--Footer-->
+<footer>
+    <section class="footer-1">
+<h3>© 2026 SPACE, Inc · Virksomhedsoplysninger · Vilkår · Fortrolighed</h3>
+    </section>
+
+    <section class="footer-2">
+         <i class="fa-solid fa-earth-europe" style="color: #3bb8ed;"></i>
+        <h3>Dansk (DK) </h3>
+    </section>
+</footer>
+
+</body>
+</html>
